@@ -8,6 +8,11 @@
         <%--}--%>
     <%--}--%>
 <%--%>--%>
+<c:forEach var="post" items="${posts}">
+    <h1>${post.title}</h1>
+    <p>${post.body}</p>
+</c:forEach>
+
 <html>
 <head>
     <jsp:include page="partials/head.jsp">
